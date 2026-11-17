@@ -16,6 +16,41 @@ function HomeLoading() {
         <p className="mt-4 text-gray-600">
           Loading your adventure...
         </p>
+        <p className="my-5 text-gray-600">
+  Fly past the rooftops, collect shiny coins and share your story.
+</p>
+        
+<section className="mt-8 text-left text-[#49345f]">
+  <h2 className="text-2xl font-black mb-3">
+    Welcome to Mumbai Million!
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Mumbai Million is a fun casual flying dog game.
+    Take your dog on an adventure, fly past rooftops,
+    collect shiny coins and enjoy the experience.
+  </p>
+
+  <h2 className="text-xl font-bold mt-6 mb-2">
+    Play, Collect and Share
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Start your adventure in Mumbai Million, collect
+    coins as you play and share your stories with
+    other players.
+  </p>
+
+  <h2 className="text-xl font-bold mt-6 mb-2">
+    Discover Player Stories
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Explore the stories shared by players and discover
+    more of the Mumbai Million community.
+  </p>
+</section>
+
       </div>
     </main>
   );
