@@ -45,9 +45,21 @@ async function AdminDashboard({
     .eq("user_id", user.id)
     .maybeSingle();
 
-  if (adminError || !admin) {
-    redirect("/");
-  }
+ if (adminError) {
+  console.error("ADMIN QUERY ERROR:", {
+    message: adminError.message,
+    code: adminError.code,
+    details: adminError.details,
+    hint: adminError.hint,
+  });
+
+  redirect("/?admin_error=query");
+}
+
+if (!admin) {
+  console.error("ADMIN RECORD NOT FOUND");
+  redirect("/?admin_error=not_found");
+}
 
   // Fetch dashboard information
   const [profiles, stories, sessions, visits] =
