@@ -1,4 +1,3 @@
-
 import { Suspense } from "react";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -40,6 +39,37 @@ function HomeLoading() {
     coins as you play and share your stories with
     other players.
   </p>
+
+<section className="mt-8 text-left text-[#49345f]">
+  <h2 className="text-2xl font-black mb-3">
+    About Mumbai Million
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Mumbai Million is a fun casual flying dog game.
+    Take your dog on an exciting adventure, fly past
+    rooftops and collect shiny coins as you play.
+  </p>
+
+  <h2 className="text-xl font-bold mt-6 mb-2">
+    Start Your Flying Dog Adventure
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Jump into Mumbai Million and explore a playful
+    world of flying adventures. Enjoy the game
+    directly in your browser.
+  </p>
+
+  <h2 className="text-xl font-bold mt-6 mb-2">
+    Mumbai Million Player Stories
+  </h2>
+
+  <p className="text-gray-600 leading-7">
+    Discover stories shared by players and explore
+    the experiences of the Mumbai Million community.
+  </p>
+</section>
 
   <h2 className="text-xl font-bold mt-6 mb-2">
     Discover Player Stories
