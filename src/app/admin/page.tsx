@@ -35,8 +35,8 @@ async function AdminDashboard({
   } = await supabase.auth.getUser();
 
   if (authError || !user) {
-    redirect("/login");
-  }
+  redirect("/login?next=/admin");
+}
 
   // Verify admin permission
   const { data: admin, error: adminError } = await supabase
