@@ -8,19 +8,13 @@ import { createClient } from "@/lib/supabase/server";
 function HomeLoading() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#ffe4b7] to-[#a777a8] flex items-center justify-center p-5">
-      
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(gameStructuredData),
-  }}
-/>
-
       <div className="bg-[#fff9ec] rounded-[32px] p-10 text-center max-w-xl w-full shadow-2xl">
         <div className="text-5xl mb-4">🐶</div>
+
         <h1 className="text-3xl font-black text-[#49345f]">
           Mumbai Million!
         </h1>
+
         <p className="mt-4 text-gray-600">
           Loading your adventure...
         </p>
@@ -38,31 +32,36 @@ async function HomeContent() {
     data: { user },
   } = await supabase.auth.getUser();
 
-
-  
-const gameStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "VideoGame",
-  "name": "Mumbai Million",
-  "url": "https://mumbai-million-game.vercel.app/",
-  "description":
-    "Mumbai Million is a casual flying dog game where players fly past rooftops, collect coins and share stories.",
-  "genre": "Casual",
-  "gamePlatform": "Web browser",
-  "inLanguage": "en"
-};
+  // Structured data for Google Search
+  const gameStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Mumbai Million",
+    "url": "https://mumbai-million-game.vercel.app/",
+    "description":
+      "Mumbai Million is a casual flying dog game where players fly past rooftops, collect coins and share stories.",
+    "genre": "Casual",
+    "gamePlatform": "Web browser",
+    "inLanguage": "en",
+  };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#ffe4b7] to-[#a777a8] p-5">
+    <main
+      id="top"
+      className="min-h-screen bg-gradient-to-b from-[#ffe4b7] to-[#a777a8] p-5"
+    >
+      {/* Google structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(gameStructuredData),
+        }}
+      />
+
       <div className="max-w-xl mx-auto space-y-6">
 
-        
-
         {/* Welcome section */}
-        <section
-  id="top"
-  className="bg-[#fff9ec] rounded-[32px] p-8 sm:p-10 text-center shadow-2xl"
->
+        <section className="bg-[#fff9ec] rounded-[32px] p-8 sm:p-10 text-center shadow-2xl">
 
           <div className="text-7xl mb-4">🐶</div>
 
