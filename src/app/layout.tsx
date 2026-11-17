@@ -7,21 +7,19 @@ export const metadata: Metadata = {
     "https://mumbai-million-game.vercel.app"
   ),
 
-  title: "Mumbai Million - Play the Flying Dog Game Online",
+  title: "Mumbai Million | Flying Dog Game",
 
   description:
-    "Play Mumbai Million, a fun flying dog game! Fly past rooftops, collect shiny coins, enjoy daily stories and share your adventure.",
+    "Play Mumbai Million, a fun flying dog game! Fly past rooftops, collect shiny coins and share your adventure.",
 
   applicationName: "Mumbai Million",
 
   keywords: [
     "Mumbai Million",
     "Mumbai Million game",
-    "Mumbai Million online game",
+    "Mumbai Million online",
     "Flying Dog Game",
-    "Flying Dog game online",
-    "casual browser games",
-    "coin collecting game"
+    "casual online game"
   ],
 
   alternates: {
@@ -29,25 +27,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Mumbai Million - Flying Dog Game",
+    title: "Mumbai Million | Flying Dog Game",
     description:
-      "Fly past rooftops, collect shiny coins and share your story in Mumbai Million!",
+      "Fly past rooftops, collect shiny coins and share your adventure in Mumbai Million!",
     url: "/",
     siteName: "Mumbai Million",
-    type: "website",
     locale: "en_IN",
+    type: "website",
   },
 
   twitter: {
-    card: "summary_large_image",
-    title: "Mumbai Million - Flying Dog Game",
+    card: "summary",
+    title: "Mumbai Million | Flying Dog Game",
     description:
-      "Fly past rooftops, collect shiny coins and share your story!",
+      "Fly past rooftops, collect shiny coins and share your adventure!",
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
